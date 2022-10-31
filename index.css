@@ -168,7 +168,7 @@ body {
 }
 
 #container .right input[type="submit"]:hover {
-    background: var(--less-red);
+    background-color: #9e1309;
 }
 
 #container .right input[type="submit"]:active {
