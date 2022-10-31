@@ -1,0 +1,211 @@
+:root {
+    --reddish: #ea4235;
+    --blueish: #4286f5;
+    --greenish: #109d58;
+    --yellowish: #fabd03;
+    --whitish: #ffffff;
+    --blackish: #000000;
+    /* after effect */
+    --less-red: #ea423590;
+    --less-blue: #01050ed3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    height: 80%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container header {
+    font-size: 30px;
+    writing-mode: vertical-lr;
+    background-color: var(--blueish);
+    color: var(--whitish);
+    padding: 10px 2px;
+    font-family: "Bangers", cursive;
+}
+
+#container .left {
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    padding: 10px 5%;
+    background: var(--reddish);
+    background: linear-gradient(var(--reddish), var(--yellowish));
+}
+
+#container .left .top {
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-family: "Bangers", cursive;
+    text-shadow: 1px 1px 1px var(--reddish);
+}
+
+#container .left .top img {
+    margin-right: 20px;
+}
+
+#container .left .mid {
+    font-size: 1.5rem;
+    padding: 0 7%;
+    text-align: center;
+    margin-top: 30px;
+    word-spacing: 2px;
+    font-family: "Caveat", cursive;
+    text-shadow: 1px 1px 1px var(--reddish);
+}
+
+#container .left .bottom button {
+    background: var(--less-blue);
+    color: var(--whitish);
+    padding: 17px 45px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    margin-top: 50px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    transition: all 0.1s ease-in-out;
+    font-family: "Kalam", cursive;
+    font-weight: bolder;
+    letter-spacing: 1.2px;
+}
+
+#container .left .bottom button:hover {
+    background: var(--blueish);
+}
+
+#container .left .bottom button:active {
+    background-color: var(--reddish);
+}
+
+#container .right {
+    flex: 50%;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#container .right .head {
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    font-family: "Bangers", cursive;
+    display: none;
+}
+
+#container .right .head img {
+    margin-right: 20px;
+    height: 70px;
+    width: 110px;
+}
+
+#container .right h2 {
+    font-size: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 0 80px;
+    font-family: "Kalam", cursive;
+    font-weight: lighter;
+}
+
+#container .right input[type="text"] {
+    width: 50%;
+    height: 30px;
+    margin-bottom: 30px;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid var(--reddish);
+}
+
+#container .right #alert {
+    color: #ff0000;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 13px;
+}
+
+#container .right input[type="submit"] {
+    width: 30%;
+    height: 40px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    background: var(--reddish);
+    margin-bottom: 30px;
+    font-size: 15px;
+    color: var(--whitish);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    font-family: "Kalam", cursive;
+    font-weight: bolder;
+    letter-spacing: 1.2px;
+}
+
+#container .right input[type="submit"]:hover {
+    background: var(--less-red);
+}
+
+#container .right input[type="submit"]:active {
+    background-color: var(--blueish);
+}
+
+#container .right h4 {
+    font-family: "Caveat", cursive;
+    font-size: 11px;
+}
+
+
+/* media queries(mobile and tab) */
+
+@media screen and (max-width: 800px) {
+    #container header {
+        display: none;
+    }
+    #container .left {
+        display: none;
+    }
+    #container .right {
+        border: 2px solid var(--reddish);
+        border-radius: 10px;
+    }
+    #container .right .head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #container .right .head img {
+        height: 50px;
+        width: 90px;
+    }
+    @media screen and (max-width: 450px) {
+        #container .right h2 {
+            padding: 0 5%;
+        }
+    }
+}

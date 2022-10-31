@@ -1,0 +1,379 @@
+:root {
+    --reddish: #ea4235;
+    --blueish: #4286f5;
+    --greenish: #109d58;
+    --yellowish: #fabd03;
+    --whitish: #ffffff;
+    --blackish: #000000;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    height: 100vh;
+    width: 95%;
+}
+
+#container .top {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    padding: 2% 0 20px 8%;
+    font-family: "Bangers", cursive;
+    font-weight: 500;
+}
+
+#container .top img {
+    margin-right: 10px;
+}
+
+#container #count {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    height: 130px;
+    margin: 15px 0 40px 0;
+    padding: 0 3%;
+}
+
+#container #count div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 170px;
+    margin: 0 3px;
+    background-color: var(--whitish);
+    font-size: 65px;
+    font-weight: 600;
+    box-shadow: 0.5px 0.5px 2px var(--blackish);
+}
+
+#container #count div .box {
+    height: 90%;
+    color: var(--whitish);
+    font-family: "Stick No Bills", sans-serif;
+    text-shadow: 1px 1px 2px var(--blackish);
+}
+
+#container #count div .label {
+    font-size: 25px;
+    height: 30%;
+    font-family: "Dongle", sans-serif;
+    font-weight: lighter;
+    letter-spacing: 1.2px;
+}
+
+#container #count #d {
+    background-color: var(--blueish);
+}
+
+#container #count #h {
+    background-color: var(--yellowish);
+}
+
+#container #count #m {
+    background-color: var(--greenish);
+}
+
+#container #count #s {
+    background-color: var(--reddish);
+}
+
+#container .main {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
+}
+
+#container .main .left {
+    height: 100%;
+    flex: 50%;
+    font-size: 28px;
+    padding: 60px 0 0 4%;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+}
+
+#container .main .left #greet,
+#days,
+#event {
+    font-size: 40px;
+}
+
+#container .main .left button {
+    height: 50px;
+    width: 140px;
+    border: none;
+    outline: none;
+    background-color: var(--reddish);
+    margin-top: 30px;
+    font-size: 12px;
+    border-radius: 30px;
+    color: var(--whitish);
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    font-family: "Kalam", cursive;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    font-style: italic;
+}
+
+#container .main .left button:hover {
+    background-color: #9e1309;
+}
+
+#container .main .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex: 50%;
+}
+
+#container .info {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 6%;
+    background-color: var(--greenish);
+    margin-top: 30px;
+}
+
+#container .info div {
+    height: 80%;
+    width: 70%;
+    background-color: var(--whitish);
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 2px 2px 5px var(--blackish);
+    border-radius: 5px;
+    font-size: 13px;
+    padding: 0 3%;
+    font-family: "Kalam", cursive;
+}
+
+#container .info div img {
+    margin-bottom: 10px;
+}
+
+#container footer {
+    height: 20vh;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer {
+    font-weight: 500;
+    font-family: "Bangers", cursive;
+    font-size: 20px;
+}
+
+footer .share {
+    font-size: 15px;
+}
+
+
+/* media queries(tablet) */
+
+@media screen and (max-width: 1000px) {
+    #container .top {
+        font-size: 25px;
+    }
+    #container .top img {
+        height: 60px;
+        width: 80px;
+    }
+    #container #count div {
+        height: 95%;
+        width: 150px;
+    }
+    #container .main .left {
+        flex: 50%;
+        font-size: 20px;
+        padding: 60px 0 0 5%;
+    }
+    #container .main .left #greet,
+    #days,
+    #event {
+        font-size: 35px;
+        font-weight: bold;
+    }
+    #container .main .left button {
+        height: 40px;
+        width: 130px;
+        margin-top: 20px;
+    }
+    #container footer {
+        font-size: 18px;
+    }
+}
+
+
+/* media queries(phone) */
+
+@media screen and (max-width: 800px) {
+    #container .top {
+        font-size: 20px;
+    }
+    #container .top img {
+        height: 65px;
+        width: 90px;
+    }
+    #container #count {
+        height: 150px;
+        padding: 0 5%;
+        margin: 50px 0 30px 0;
+    }
+    #container #count div {
+        height: 95%;
+        width: 120px;
+    }
+    #container .main {
+        height: 120vh;
+        width: 100%;
+        flex-direction: column;
+        padding: 0 5%;
+    }
+    #container .main .left {
+        text-align: center;
+        font-size: 22px;
+        padding: 40px 5% 0 5%;
+    }
+    #container .main .left #greet,
+    #days,
+    #event {
+        font-size: 30px;
+    }
+    #container .main .left button {
+        height: 50px;
+        width: 140px;
+        margin-top: 50px;
+    }
+    #container .main .right img {
+        width: 100%;
+    }
+    #container .info {
+        height: 100vh;
+        flex-direction: column;
+    }
+    #container .info div {
+        height: 200px;
+        margin: 20px 0;
+    }
+    @media screen and (max-width: 620px) {
+        #container .top {
+            padding: 0 1%;
+        }
+        #container #count div {
+            height: 80%;
+            width: 100px;
+            font-size: 60px;
+        }
+        #container footer {
+            font-size: 17px;
+        }
+    }
+    @media screen and (max-width: 500px) {
+        #container #count {
+            padding: 0 1%;
+        }
+        #container #count div {
+            height: 70%;
+            width: 90px;
+            font-size: 45px;
+        }
+        #container .main {
+            height: 100vh;
+        }
+        #container .main .right img {
+            width: 115%;
+        }
+        #container .main .left {
+            font-size: 20px;
+            padding: 10px 5% 0 5%;
+            margin-bottom: -300px;
+        }
+        #container .main .left #greet,
+        #days,
+        #event {
+            font-size: 25px;
+        }
+        #container .main .left button {
+            height: 50px;
+            width: 140px;
+            margin-top: 40px;
+        }
+        #container footer {
+            font-size: 16px;
+        }
+    }
+    @media screen and (max-width: 425px) {
+        #container #count div .label {
+            font-size: 16px;
+        }
+        #container .main .right img {
+            width: 115%;
+        }
+        #container .main .left button {
+            height: 40px;
+            width: 120px;
+            font-size: 11px;
+        }
+        #container footer {
+            font-size: 15px;
+        }
+    }
+    @media screen and (max-width: 400px) {
+        /* body {
+            background-color: red;
+        } */
+        #container #count {
+            padding: 0;
+        }
+        #container #count div {
+            height: 70%;
+            width: 80px;
+            font-size: 40px;
+        }
+        #container #count div .label {
+            font-size: 15px;
+        }
+        #container .main .left {
+            font-size: 18px;
+        }
+        #container .main .left #greet,
+        #days,
+        #event {
+            font-size: 20px;
+        }
+        #container footer {
+            font-size: 14px;
+        }
+    }
+}
