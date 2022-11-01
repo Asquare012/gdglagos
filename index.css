@@ -204,6 +204,10 @@ body {
         width: 90px;
     }
     @media screen and (max-width: 450px) {
+        #container {
+            height: 90%;
+            width: 80%;
+        }
         #container .right h2 {
             padding: 0 5%;
         }
