@@ -287,6 +287,9 @@ footer .share {
         margin: 20px 0;
     }
     @media screen and (max-width: 620px) {
+        #container .main {
+            height: 100vh;
+        }
         #container .top {
             padding: 0 1%;
         }
