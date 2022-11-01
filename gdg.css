@@ -363,9 +363,16 @@ footer .share {
         }
     }
     @media screen and (max-width: 400px) {
-        /* body {
-            background-color: red;
-        } */
+        #container .main {
+            height: 70vh;
+        }
+        #container .top {
+            font-size: 18px;
+        }
+        #container .top img {
+            height: 40px;
+            width: 70px;
+        }
         #container #count {
             padding: 0;
         }
