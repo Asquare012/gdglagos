@@ -243,8 +243,8 @@ footer .share {
         font-size: 20px;
     }
     #container .top img {
-        height: 65px;
-        width: 90px;
+        height: 45px;
+        width: 75px;
     }
     #container #count {
         height: 150px;
@@ -292,7 +292,7 @@ footer .share {
             height: 100vh;
         }
         #container .top {
-            padding: 0 0 0 5%;
+            padding: 0 0 0 7%;
         }
         #container #count div {
             height: 80%;
@@ -304,6 +304,9 @@ footer .share {
         }
     }
     @media screen and (max-width: 500px) {
+        #container .top {
+            padding: 0 0 0 1%;
+        }
         #container #count {
             padding: 0 1%;
         }
@@ -371,10 +374,11 @@ footer .share {
     }
     @media screen and (max-width: 400px) {
         #container .main {
-            height: 70vh;
+            height: 80vh;
         }
         #container .top {
             font-size: 18px;
+            padding-top: 3%;
         }
         #container .top img {
             height: 40px;
