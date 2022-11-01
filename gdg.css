@@ -32,7 +32,7 @@ body {
     display: flex;
     align-items: center;
     font-size: 30px;
-    padding: 2% 0 20px 8%;
+    padding: 2% 0 0 8%;
     font-family: "Bangers", cursive;
     font-weight: 500;
 }
@@ -46,7 +46,7 @@ body {
     grid-template-columns: repeat(4, 1fr);
     place-items: center;
     height: 130px;
-    margin: 15px 0 40px 0;
+    margin: 0 0 40px 0;
     padding: 0 3%;
 }
 
@@ -204,6 +204,7 @@ footer .share {
 @media screen and (max-width: 1000px) {
     #container .top {
         font-size: 25px;
+        margin-bottom: -30px;
     }
     #container .top img {
         height: 60px;
@@ -291,7 +292,7 @@ footer .share {
             height: 100vh;
         }
         #container .top {
-            padding: 0 1%;
+            padding: 0 0 0 5%;
         }
         #container #count div {
             height: 80%;
@@ -337,6 +338,12 @@ footer .share {
         }
     }
     @media screen and (max-width: 425px) {
+        #container .top {
+            padding: 0 0 0 1%;
+        }
+        #container .main {
+            height: 85vh;
+        }
         #container #count div .label {
             font-size: 16px;
         }
